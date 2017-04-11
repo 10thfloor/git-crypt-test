@@ -1,7 +1,4 @@
 require('colour');
-
-const app = require('./routes')(require('express')());
-
 require('dotenv').config({
 	path: require('path').resolve(__dirname, (
 		process.env.PRODUCTION ?
@@ -9,6 +6,13 @@ require('dotenv').config({
 		'../.env.develop'
 	))
 });
+
+const app = require('./routes')(require('express')());
+const morgan = require('morgan');
+
+if(!process.env.PRODUCTION) {
+	app.use(morgan('dev'));
+}
 
 app.listen(process.env.PORT, (err) => {
 	err ? console.log(err) :

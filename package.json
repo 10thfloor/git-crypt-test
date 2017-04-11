@@ -5,25 +5,27 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon --debug ./src/index.js --harmony"
+    "start:dev": "node debug ./src/index.js --harmony"
   },
   "keywords": [],
   "author": "MK <mackenzie@redacademy.com> (http://mackenziekieran.com)",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.17.1",
+    "colour": "^0.7.1",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.3",
     "dotenv": "^4.0.0",
     "express": "^4.15.2",
-    "jwt": "^0.2.0",
-    "node-bcrypt": "^0.0.1",
-    "pg-promise": "^5.6.4",
+    "jsonwebtoken": "^7.3.0",
+    "morgan": "^1.8.1",
+    "pg": "^6.1.5",
+    "pg-hstore": "^2.3.2",
     "resource-router-middleware": "^0.6.0",
-    "colour": "^0.7.1"
+    "sequelize": "^3.30.4"
   },
   "devDependencies": {
-    "morgan": "^1.8.1",
-    "pg-monitor": "^0.7.1"
+    "morgan": "^1.8.1"
   }
 }
