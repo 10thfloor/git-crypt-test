@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/index.js --harmony --harmony_modules"
+    "start:dev": "nodemon --debug ./src/index.js --harmony"
   },
   "keywords": [],
   "author": "MK <mackenzie@redacademy.com> (http://mackenziekieran.com)",
