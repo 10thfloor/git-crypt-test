@@ -2,7 +2,7 @@
   "name": "redit-server2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon --debug ./src/index.js --harmony"
@@ -19,10 +19,10 @@
     "jwt": "^0.2.0",
     "node-bcrypt": "^0.0.1",
     "pg-promise": "^5.6.4",
-    "resource-router-middleware": "^0.6.0"
+    "resource-router-middleware": "^0.6.0",
+    "colour": "^0.7.1"
   },
   "devDependencies": {
-    "colour": "^0.7.1",
     "morgan": "^1.8.1",
     "pg-monitor": "^0.7.1"
   }
